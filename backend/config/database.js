@@ -3,7 +3,7 @@ require("dotenv").config({ path: "./config.env" });
 
 const connectDatabase = () => {
   mongoose
-    .connect(process.env.DB_URI, {
+    .connect("mongodb+srv://sixPackProgrammer:sixPackProgrammer@cluster0.0jijw.mongodb.net/Ecommerce?retryWrites=true&w=majority", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
